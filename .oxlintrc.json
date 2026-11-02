@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "react"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/hooks/useDrawing.ts", "src/components/SkiaRenderer.tsx"],
+      "rules": {
+        "react/immutability": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["artifacts/**", "ios/**", "android/**"]
+}

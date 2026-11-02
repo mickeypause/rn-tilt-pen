@@ -1,0 +1,37 @@
+{
+  "name": "rn-tilt-pen",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client --port 8091",
+    "android": "expo run:android",
+    "ios": "expo run:ios --port 8091",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint --max-warnings=0 .",
+    "test": "tsx --test src/__tests__/*.test.ts"
+  },
+  "dependencies": {
+    "@shopify/react-native-skia": "2.14.0",
+    "expo": "^58.0.22",
+    "expo-dev-client": "~58.0.18",
+    "expo-device": "~58.0.5",
+    "expo-haptics": "~58.0.7",
+    "expo-navigation-bar": "~58.0.4",
+    "expo-sensors": "~58.0.4",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-reanimated": "4.7.1",
+    "react-native-worklets": "0.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "babel-preset-expo": "~58.0.0",
+    "oxlint": "^1.90.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  }
+}

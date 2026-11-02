@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "rn-tilt-pen",
+    "slug": "rn-tilt-pen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "experiments": {
+      "reactCompiler": true
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mickeypause.rntiltpen",
+      "infoPlist": {
+        "CADisableMinimumFrameDurationOnPhone": true,
+        "NSMotionUsageDescription": "Tilt your phone to roll the ball and draw ink."
+      }
+    },
+    "android": {
+      "package": "com.mickeypause.rntiltpen",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "rn-tilt-pen",
+    "plugins": [
+      "expo-sensors",
+      [
+        "expo-navigation-bar",
+        {
+          "hidden": true
+        }
+      ],
+      [
+        "expo-status-bar",
+        {
+          "hidden": true
+        }
+      ]
+    ]
+  }
+}
